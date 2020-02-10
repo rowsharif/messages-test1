@@ -46,7 +46,7 @@ export default ({ message, handleEdit }) => {
           source={{ uri: user.photoURL }}
         />
         <Text style={styles.getStartedText}>
-          {user.displayName} - {message.to} - {message.text}
+          {user.displayName} -- {message.to} -- {message.text}
         </Text>
         <Button title="Edit" onPress={() => handleEdit(message)} />
         <Button title="X" onPress={() => handleDelete(message)} />
